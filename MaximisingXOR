@@ -1,0 +1,13 @@
+def maxXor(l, r):
+    max=0
+    for i in range(l,r):
+        for j in range(l,r+1):
+            if(max<(i^j)):
+                max=i^j
+            else:
+                continue
+    return max
+if __name__ == '__main__':
+  l = int(raw_input())
+  r = int(raw_input())
+  print maxXor(l, r)
